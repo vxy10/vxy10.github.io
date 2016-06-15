@@ -50,7 +50,7 @@ plt.plot(x,y_m,x,y,'rs')
 
 
 
-![png](images/output_2_1.png)
+![png](/images/output_2_1.png)
 
 
 Now to make predictions on a new point x_pred, I will measure distance of x_pred to each of the points and use the value of the nearest value as guess.
@@ -85,7 +85,7 @@ plt.plot(x,y_m,x,y,'rs',x_pred,y_pred,'go')
 
 
 
-![png](images/output_6_1.png)
+![png](/images/output_6_1.png)
 
 
 
@@ -116,11 +116,6 @@ y_pred_nn = np.mean(y[arg_nn])
 plt.plot(x,y_m,x,y,'rs',alpha = 0.5)
 plt.plot(x_pred,y_pred,'go',x_pred,y_pred_nn,'bs')
 ```
-
-
-
-
-
 
 <div class='fig figcenter fighighlight'>
   <img src='/images/output_9_1.png'>
