@@ -1,7 +1,7 @@
 ---
 layout: page
-title: AWS Tutorial
-permalink: /ibl-knn0/
+title: Instance Based learning
+permalink: md/ibl-knn0/
 ---
 
 ## Instance based learning  (and KNN) -  Part 1
