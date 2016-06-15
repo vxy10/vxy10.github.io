@@ -1,10 +1,11 @@
 # Site settings
-title: Vivek Yadav Project Portfolio
-email: vivek.yadav@gmail.com
-description: "Compilation of my data science and machine learning projects."
+title: CS231n Convolutional Neural Networks for Visual Recognition
+email: karpathy@cs.stanford.edu
+description: "Course materials and notes for Stanford class CS231n: Convolutional Neural Networks for Visual Recognition."
 baseurl: ""
-url: "http://vxy10.github.io"
-github_username:  vxy10
+url: "http://cs231n.github.io"
+twitter_username: cs231n
+github_username:  cs231n
 
 # Build settings
 markdown: kramdown
