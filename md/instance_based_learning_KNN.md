@@ -1,8 +1,8 @@
-Title: Instance based learning KNN 1
-Date: 2016-06-14 22:51
-Category: Machine Learning
-tags: Instance based learning, KNN, Machine learning
-summary: Here efficacy of instance based learning algorithms, in particular kNN is investigated. The effect of large or small 'k' is illustrated for  regresson and classification tasks.
+---
+layout: page
+title: AWS Tutorial
+permalink: /ibl-knn0/
+---
 
 ## Instance based learning  (and KNN) -  Part 1
 
@@ -347,4 +347,3 @@ In the next post, I will test some modified instance based algorithms that were 
 
 
 
-images
