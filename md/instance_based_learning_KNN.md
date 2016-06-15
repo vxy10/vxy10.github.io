@@ -122,8 +122,9 @@ plt.plot(x_pred,y_pred,'go',x_pred,y_pred_nn,'bs')
 
 
 
-
-![png](images/output_9_1.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/output_9_1.png'>
+</div>
 
 
 
