@@ -168,3 +168,4 @@ they are not doing anything.
 you spin up an instance, the best way to go would be to create an AMI for that
 and attach that AMI to your machine when configuring your instance (before
 launching but after you have selected the AMI).
+
