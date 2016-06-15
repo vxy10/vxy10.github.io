@@ -142,7 +142,7 @@ plt.plot(x_pred,y_pred,'go',x_pred_arr,y_pred_arr,'bs')
 
 
 
-![png](images/output_10_1.png)
+![png](/images/output_10_1.png)
 
 
 Therefore, taking average from more values results in closer prediction. However, one must be careful in choosing the number of nearest neighbors. As an extreme example, when number of nearest neighbors is equal to the data points in the training set, the output is the mean of all values. 
@@ -166,7 +166,7 @@ plt.plot(x_pred,y_pred,'go',x_pred_arr,y_pred_arr,'bs')
 
 
 
-![png](images/output_12_1.png)
+![png](/images/output_12_1.png)
 
 
 Important take aways
@@ -211,7 +211,7 @@ plt.xlim(0.8,3.3)
 
 
 
-![png](images/output_15_1.png)
+![png](/images/output_15_1.png)
 
 
 Now I will predict which class a new point belongs to. The way of doing is similar to before. I will first measure distance from the new point to all the points in the training data set, and identify the point nearest to it, and assign the point to that class. 
@@ -255,7 +255,7 @@ plt.xlim(0.8,3.3)
 
 
 
-![png](images/output_18_1.png)
+![png](/images/output_18_1.png)
 
 
 If the new point is well within the boundary separating the points, the k-nearest neighbor algroithm works well. However, in cases when the points are close to boundary, k-nearest algorithm can result in 'noisy' predictions. Below I illustrate this by drawing decision boundaries for each class. First I generated a grid of points and calculated the corresponding class for each point in the grid. I then used contour function to compute decision boundaries as the lines across which the value of class changes. 
@@ -326,7 +326,7 @@ plt.title('20-NN')
 
 
 
-![png](images/output_20_1.png)
+![png](/images/output_20_1.png)
 
 
 ## Conclusion
