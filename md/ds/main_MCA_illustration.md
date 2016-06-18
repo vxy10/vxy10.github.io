@@ -1073,7 +1073,7 @@ plt.show()
 
 In this post, multiple correspondance analysis, a principal component analysis like technique for categorical data is presented. First the method of MCA was presented using python code, then the MCA package was introduced. In the next post I will apply this technique to a more complex problem of identifying at risk students from demographic and behavioral data. 
 
-#### 4. Acknowledgements
+#### 5. Acknowledgements
 
 - Source of Data https://github.com/esafak/mca/tree/master/data
 - MCA github https://github.com/esafak/mca
