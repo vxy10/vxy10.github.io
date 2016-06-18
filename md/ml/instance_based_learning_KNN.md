@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Instance Based learning
-permalink: md/ibl-knn0/
+permalink: md/ml/ibl-knn0/
 ---
 
 ## Instance based learning  (and KNN) -  Part 1
