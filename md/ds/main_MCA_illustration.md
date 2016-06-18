@@ -26,7 +26,7 @@ The wine data consists of ratings from 3 experts on wine aged in 2 distinct barr
 
 MCA however is well suited for such applications. This post explores how MCA can be applied to understand effect of barrel, and how well do experts' ratings agree with one another.  
 
-First the necessary packages are loaded.
+#### First the necessary packages are loaded.
 
 
 ```python
@@ -47,7 +47,7 @@ pd.set_option('display.precision', 5)
 pd.set_option('display.max_columns', 25)
 ```
 
-##### Reading wine data
+#### Reading wine data
 
 
 ```python
@@ -359,7 +359,7 @@ In table above, the expert 1 rated wine from 1 to 3 for fruitiness where as expe
 
 PS: Percentage of variance explained by an eigen vector is also referred as its inertia.
 
-##### Normalize
+#### Normalize
 
 
 ```python
@@ -369,7 +369,7 @@ N_all = np.sum(X_values)
 Z = X_values/N_all
 ```
 
-##### Compute row and column sums
+#### Compute row and column sums
 
 
 ```python
@@ -382,7 +382,7 @@ X_values.shape, Sum_r.shape, Sum_c.shape, N_all
 ```
 
 
-##### Compute residual
+#### Compute residual
 
 
 ```python
@@ -1069,11 +1069,11 @@ plt.show()
 </div>
 
 
-#### Conclusion
+#### 4. Conclusion
 
 In this post, multiple correspondance analysis, a principal component analysis like technique for categorical data is presented. First the method of MCA was presented using python code, then the MCA package was introduced. In the next post I will apply this technique to a more complex problem of identifying at risk students from demographic and behavioral data. 
 
-#### Acknowledgements
+#### 4. Acknowledgements
 
 - Source of Data https://github.com/esafak/mca/tree/master/data
 - MCA github https://github.com/esafak/mca
