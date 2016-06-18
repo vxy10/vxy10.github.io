@@ -64,10 +64,6 @@ X.shape, j_sup.shape, i_sup.shape
 
 
 
-    ((6, 22), (6,), (22,))
-
-
-
 
 ```python
 src_index = (['Expert 1'] * 7 + ['Expert 2'] * 9 + ['Expert 3'] * 6)
@@ -386,12 +382,6 @@ X_values.shape, Sum_r.shape, Sum_c.shape, N_all
 ```
 
 
-
-
-    ((6, 22), (6,), (22,), 60.0)
-
-
-
 ##### Compute residual
 
 
@@ -414,16 +404,6 @@ Z_residual.shape, Z.shape, D_r_sqrt_mi.shape,D_c_sqrt_mi.shape
 
 
 
-
-    ((6, 22), (6, 22), (6, 6), (22, 22))
-
-
-
-
-```python
-
-```
-
 ##### MCA matrix and SVD calculations
 
 
@@ -443,15 +423,6 @@ P.shape,S.shape,Q.shape
 
 
 
-
-    ((6, 6), (6,), (22, 22))
-
-
-
-
-```python
-
-```
 
 
 ```python
@@ -478,14 +449,6 @@ F.shape, G.shape
 
 
 
-    ((6, 22), (22, 6))
-
-
-
-
-```python
-
-```
 
 The $S^2$ represents the eigen values (or inertia) for the corresponding factors. Therefore, eigenvalues normalized by the sum of eigen vectors represent the percentage contribution of individual eigen vectors. 
 
@@ -844,8 +807,9 @@ plt.annotate('W?', xy=(X_i[0],X_i[1]), xytext=(X_i[0] + .03, X_i[1] + .03))
 plt.show()
 ```
 
-
-![png](/images/MCA1.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/MCA1.png'>
+</div>
 
 
 #### 3. Quick tutorial on MCA package. 
@@ -1100,7 +1064,9 @@ plt.show()
 ```
 
 
-![png](/images/MCA2.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/MCA2.png'>
+</div>
 
 
 #### Conclusion
@@ -1115,6 +1081,3 @@ In this post, multiple correspondance analysis, a principal component analysis l
 *Abdi, H., & Valentin, D. (2007). Multiple correspondence analysis. In N.J. Salkind (Ed.): Encyclopedia of Measurement and Statistics. Thousand Oaks (CA): Sage. pp. 651-657.* 
 
 
-```python
-
-```
