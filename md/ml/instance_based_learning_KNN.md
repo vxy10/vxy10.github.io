@@ -58,9 +58,6 @@ plt.plot(x,y_m,x,y,'rs')
 Now to make predictions on a new point x_pred, I will measure distance of x_pred to each of the points and use the value of the nearest value as guess.
 
 
-```python
-
-```
 
 
 ```python
