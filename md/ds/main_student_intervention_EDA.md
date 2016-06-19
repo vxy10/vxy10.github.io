@@ -8,7 +8,8 @@ permalink: md/ds/si-eda/
 
 In this post I conduct exploratory data analysis (EDA) on behavioral and demographic data collected in students from two schools. The data can be downloaded from http://tinyurl.com/h2wvk2r. 
 
-The data is composed of the following fiels, 
+The data is composed of the following fields,
+ 
 - 'school'  student's school (binary: "GP" or "MS")
 - 'sex' student's sex (binary: "F" - female or "M" - male)
 - 'age' student's age (numeric: from 15 to 22)
@@ -42,6 +43,7 @@ The data is composed of the following fiels,
 - 'passed' did the student pass the final exam (binary: yes or no)
     
 The main findings from EDA are,
+
 1. Data is collected for 29 factors relating to various socioeconomic, demographic and behavioral indicators of 395 students. 
 2. Of the 395 students, 130 failed and 265 passed. Goal of this project is to identify if a student is at risk for failing based on his/her socioeconomic, demographic and behavioral data. 
 3. School GP has much more students than MS, and GP has pass percent of 67.
