@@ -1,3 +1,8 @@
+---
+layout: page
+title: Student Intervention System-EDA
+permalink: md/ds/si-eda/
+---
 
 ## Building a student intervention system - EDA.
 
