@@ -356,8 +356,9 @@ plot_figures_by_fac(student_data,'school',1,2)
 ```
 
 
-![png](output_8_0.png)
-
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda1.png'>
+</div>
 
 
 ```python
@@ -366,7 +367,9 @@ plot_figures_by_fac(student_data,'age',3,3)
 ```
 
 
-![png](output_9_0.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda2.png'>
+</div>
 
 
 
@@ -376,7 +379,9 @@ plot_figures_by_fac(student_data,'address',1,2)
 ```
 
 
-![png](output_10_0.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda3.png'>
+</div>
 
 
 
@@ -385,8 +390,9 @@ plt.figure(figsize=(10,4))
 plot_figures_by_fac(student_data,'famsize',1,2)
 ```
 
-
-![png](output_11_0.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda4.png'>
+</div>
 
 
 
@@ -396,7 +402,9 @@ plot_figures_by_fac(student_data,'Pstatus',1,2)
 ```
 
 
-![png](output_12_0.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda5.png'>
+</div>
 
 
 
@@ -408,7 +416,9 @@ plot_figures_by_fac(student_data,'Medu',3,2)
 ```
 
 
-![png](output_13_0.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda6.png'>
+</div>
 
 
 
@@ -420,7 +430,9 @@ plot_figures_by_fac(student_data,'Fedu',3,2)
 ```
 
 
-![png](output_14_0.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda7.png'>
+</div>
 
 
 
@@ -430,7 +442,9 @@ plot_figures_by_fac(student_data,'Mjob',3,2)
 ```
 
 
-![png](output_15_0.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda8.png'>
+</div>
 
 
 
@@ -440,7 +454,9 @@ plot_figures_by_fac(student_data,'Fjob',3,2)
 ```
 
 
-![png](output_16_0.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda9.png'>
+</div>
 
 
 
@@ -450,7 +466,9 @@ plot_figures_by_fac(student_data,'reason',2,2)
 ```
 
 
-![png](output_17_0.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda10.png'>
+</div>
 
 
 
@@ -460,7 +478,9 @@ plot_figures_by_fac(student_data,'guardian',2,2)
 ```
 
 
-![png](output_18_0.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda11.png'>
+</div>
 
 
 
@@ -470,7 +490,9 @@ plot_figures_by_fac(student_data,'traveltime',2,2)
 ```
 
 
-![png](output_19_0.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda12.png'>
+</div>
 
 
 
@@ -480,8 +502,9 @@ plot_figures_by_fac(student_data,'studytime',2,2)
 ```
 
 
-![png](output_20_0.png)
-
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda13.png'>
+</div>
 
 
 ```python
@@ -490,8 +513,9 @@ plot_figures_by_fac(student_data,'failures',2,2)
 ```
 
 
-![png](output_21_0.png)
-
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda14.png'>
+</div>
 
 
 ```python
@@ -500,8 +524,9 @@ plot_figures_by_fac(student_data,'schoolsup',1,2)
 ```
 
 
-![png](output_22_0.png)
-
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda15.png'>
+</div>
 
 
 ```python
@@ -510,8 +535,9 @@ plot_figures_by_fac(student_data,'famsup',1,2)
 ```
 
 
-![png](output_23_0.png)
-
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda16.png'>
+</div>
 
 
 ```python
@@ -520,8 +546,9 @@ plot_figures_by_fac(student_data,'paid',1,2)
 ```
 
 
-![png](output_24_0.png)
-
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda17.png'>
+</div>
 
 
 ```python
@@ -530,8 +557,9 @@ plot_figures_by_fac(student_data,'activities',1,2)
 ```
 
 
-![png](output_25_0.png)
-
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda18.png'>
+</div>
 
 
 ```python
@@ -540,8 +568,9 @@ plot_figures_by_fac(student_data,'nursery',1,2)
 ```
 
 
-![png](output_26_0.png)
-
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda19.png'>
+</div>
 
 
 ```python
@@ -550,8 +579,9 @@ plot_figures_by_fac(student_data,'higher',1,2)
 ```
 
 
-![png](output_27_0.png)
-
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda20.png'>
+</div>
 
 
 ```python
@@ -560,8 +590,9 @@ plot_figures_by_fac(student_data,'internet',1,2)
 ```
 
 
-![png](output_28_0.png)
-
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda21.png'>
+</div>
 
 
 ```python
@@ -570,7 +601,9 @@ plot_figures_by_fac(student_data,'romantic',1,2)
 ```
 
 
-![png](output_29_0.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda22.png'>
+</div>
 
 
 
@@ -581,15 +614,9 @@ plt.suptitle('from 1 - poor to 5 -Excellent')
 ```
 
 
-
-
-    <matplotlib.text.Text at 0x113100b90>
-
-
-
-
-![png](output_30_1.png)
-
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda23.png'>
+</div>
 
 
 ```python
@@ -600,13 +627,9 @@ plt.suptitle('from 1 - very low to 5 - very high')
 
 
 
-
-    <matplotlib.text.Text at 0x112b741d0>
-
-
-
-
-![png](output_31_1.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda24.png'>
+</div>
 
 
 
@@ -619,12 +642,10 @@ plt.suptitle('from 1 - very low to 5 - very high')
 
 
 
-    <matplotlib.text.Text at 0x11268bfd0>
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda25.png'>
+</div>
 
-
-
-
-![png](output_32_1.png)
 
 
 
@@ -637,12 +658,10 @@ plt.suptitle('from 1 - very low to 5 - very high')
 
 
 
-    <matplotlib.text.Text at 0x114174c10>
 
-
-
-
-![png](output_33_1.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda26.png'>
+</div>
 
 
 
@@ -655,12 +674,10 @@ plt.suptitle('from 1 - very low to 5 - very high')
 
 
 
-    <matplotlib.text.Text at 0x113bef3d0>
 
-
-
-
-![png](output_34_1.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda27.png'>
+</div>
 
 
 
@@ -673,12 +690,9 @@ plt.suptitle('from 1 - very low to 5 - very high')
 
 
 
-    <matplotlib.text.Text at 0x11491ac90>
-
-
-
-
-![png](output_35_1.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda28.png'>
+</div>
 
 
 
@@ -691,18 +705,12 @@ plt.suptitle('from 1 - very bad to 5 - very good')
 
 
 
-    <matplotlib.text.Text at 0x114fc2b90>
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda29.png'>
+</div>
 
 
 
-
-![png](output_36_1.png)
-
-
-
-```python
-
-```
 
 
 ```python
@@ -713,13 +721,9 @@ plt.suptitle('from 1 - very bad to 5 - very good')
 
 
 
-
-    <matplotlib.text.Text at 0x11554e2d0>
-
-
-
-
-![png](output_38_1.png)
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si_eda30.png'>
+</div>
 
 
 Additional links
