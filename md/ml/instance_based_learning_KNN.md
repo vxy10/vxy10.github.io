@@ -85,7 +85,7 @@ plt.plot(x,y_m,x,y,'rs',x_pred,y_pred,'go')
 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/images/output_6_1.png'>
+  <img src='/images/knn1.png'>
 </div>
 
 
@@ -120,7 +120,7 @@ plt.plot(x_pred,y_pred,'go',x_pred,y_pred_nn,'bs')
 ```
 
 <div class='fig figcenter fighighlight'>
-  <img src='/images/output_9_1.png'>
+  <img src='/images/knn2.png'>
 </div>
 
 
@@ -143,7 +143,7 @@ plt.plot(x_pred,y_pred,'go',x_pred_arr,y_pred_arr,'bs')
 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/images/output_10_1.png'>
+  <img src='/images/knn3.png'>
 </div>
 
 
@@ -170,7 +170,7 @@ plt.plot(x_pred,y_pred,'go',x_pred_arr,y_pred_arr,'bs')
 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/images/output_12_1.png'>
+  <img src='/images/knn4.png'>
 </div>
 
 
@@ -215,7 +215,7 @@ plt.xlim(0.8,3.3)
 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/images/output_15_1.png'>
+  <img src='/images/knn5.png'>
 </div>
 
 
@@ -256,7 +256,7 @@ plt.xlim(0.8,3.3)
 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/images/output_18_1.png'>
+  <img src='/images/knn6.png'>
 </div>
 
 
@@ -325,7 +325,7 @@ plt.title('20-NN')
 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/images/output_20_1.png'>
+  <img src='/images/knn7.png'>
 </div>
 
 
