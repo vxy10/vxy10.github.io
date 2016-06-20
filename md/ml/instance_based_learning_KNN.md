@@ -2,6 +2,7 @@
 layout: page
 title: Instance Based learning
 permalink: md/ml/ibl-knn0/
+comments: true
 ---
 
 ## Instance based learning  (and KNN) -  Part 1
