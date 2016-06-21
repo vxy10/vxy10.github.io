@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "The Unreasonable Effectiveness of Recurrent Neural Networks"
 excerpt: "We'll train and sample from character-level RNN language models that learn to write poetry, latex math and code. We'll also analyze the models and get hints of future research directions."
-date:   2015-05-21 11:00:00
+date:   2016-06-08 11:00:00
 mathjax: true
 ---
 

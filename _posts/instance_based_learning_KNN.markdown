@@ -51,7 +51,7 @@ plt.plot(x,y_m,x,y,'rs')
 
    
 <div class='fig figcenter fighighlight'>
-  <img src='/images/output_2_1.png'>
+  <img src='/images/knn0.png'>
 </div>
 
 
