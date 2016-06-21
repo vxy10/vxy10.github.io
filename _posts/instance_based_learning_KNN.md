@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Instance Based learning
+title: Instance Based learning (KNN) Part 1
+date: 2016-06-08 22:22:22
 permalink: md/ml/ibl-knn0/
 comments: true
+excerpt: "I present brief introduction to instance based algorithms, in particular KNN. I demonstrate the effect of choosing the hyper parameter K in nearest neighbor classification."
 ---
 
 ## Instance based learning  (and KNN) -  Part 1
