@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Instance Based learning
-permalink: md/ml/ibl-knn0/
 comments: true
+title:  "Instance based learning  (and KNN) -  Part 1"
+excerpt: "We'll train and sample from character-level RNN language models that learn to write poetry, latex math and code. We'll also analyze the models and get hints of future research directions."
+date:   2015-05-21 11:00:00
+mathjax: true
 ---
-
 ## Instance based learning  (and KNN) -  Part 1
 
 
