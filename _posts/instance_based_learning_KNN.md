@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Instance Based learning
 permalink: md/ml/ibl-knn0/
 comments: true
