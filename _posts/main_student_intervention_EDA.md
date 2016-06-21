@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Student Intervention System-EDA
 permalink: md/ds/si-eda/
 ---

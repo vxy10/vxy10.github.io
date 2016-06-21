@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Multiple Correspondance Analysis
 permalink: md/ds/mca1/
 ---

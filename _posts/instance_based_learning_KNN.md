@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Instance Based learning (KNN) Part 1
 date: 2016-06-08 22:22:22
 permalink: md/ml/ibl-knn0/
