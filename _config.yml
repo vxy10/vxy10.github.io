@@ -1,18 +1,26 @@
-# Site settings
-title: Vivek Yadav Project Portfolio
-email: vivek.yadav@gmail.com
-description: "Compilation of my favorite data science and machine learning projects."
-baseurl: ""
-url: "http://vxy10.github.io"
-github_username:  vxy10
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-# Build settings
-markdown: kramdown
-permalink: pretty
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
 
-highlighter: rouge
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: rouge
+# Setup
+title:            Hyde
+tagline:          'A Jekyll theme'
+description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              http://hyde.getpoole.com
+baseurl:          /
 
+author:
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/poole/hyde
