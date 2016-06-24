@@ -7,7 +7,7 @@ url: "http://vxy10.github.io"
 github_username:  vxy10
 
 # Build settings
-markdown: kramdown
+markdown: maruku
 permalink: pretty
 
 highlighter: rouge
