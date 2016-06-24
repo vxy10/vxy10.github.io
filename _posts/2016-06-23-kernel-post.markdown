@@ -1,9 +1,9 @@
 ---
 layout: post
 comments: true
-title:  "Instance based learning  (and KNN) -  Part 1"
-excerpt: "We'll train and sample from character-level RNN language models that learn to write poetry, latex math and code. We'll also analyze the models and get hints of future research directions."
-date:   2016-06-08 11:00:00
+title:  "Instance based learning  (Kernel Methods) -  Part 2"
+excerpt: "This post presents kernel-based algorithms for regression and classification."
+date:   2016-06-23 11:00:00
 mathjax: true
 ---
 
