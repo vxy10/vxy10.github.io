@@ -10,4 +10,5 @@ This page is compilation of posts that explain various machine learning algorith
 #### Instance Based Algorithms
 - Part 1: [Introduction to KNN](http://vxy10.github.io/2016/06/08/knn-post/)
 - Part 2: [Kernel Methods](http://vxy10.github.io/2016/06/23/kernel-post/)
+- Part 3: [KNN for image classification](http://vxy10.github.io/2016/06/23/knn-image/)
 
