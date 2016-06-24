@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Instance based learning  (and KNN) -  Part 1"
-excerpt: "We'll train and sample from character-level RNN language models that learn to write poetry, latex math and code. We'll also analyze the models and get hints of future research directions."
+excerpt: "In this post, k-NN algorithms are presented for regression and classification tasks. The effect of choosing K is demonstrated via a regression and classification example."
 date:   2016-06-08 11:00:00
 mathjax: true
 ---
@@ -48,7 +48,7 @@ plt.plot(x,y_m,x,y,'rs')
 
    
 <div class='fig figcenter fighighlight'>
-  <img src='/images/output_2_1.png'>
+  <img src='/images/knn0.png'>
 </div>
 
 
