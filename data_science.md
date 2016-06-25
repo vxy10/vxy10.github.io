@@ -12,3 +12,4 @@ In this project, I develop a student intervention system based on demographic, e
 
 - [Introduction to MCA](http://vxy10.github.io/2016/06/10/intro-MCA/)
 - [Building a student intervention system - EDA](http://vxy10.github.io/2016/06/10/si-EDA/)
+- [Building a student intervention system: MCA for dimensionality reduction](http://vxy10.github.io/2016/06/24/si-mca/)
