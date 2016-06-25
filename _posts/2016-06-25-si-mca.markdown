@@ -14,8 +14,8 @@ mathjax: true
 #### Overview
 In previous posts I explained how Multiple Correspondance Analysis (MCA) can be applied to get lower dimensional representation of a categorical data. In this post, I will apply it to a data set comprising behavioral and demographic data collected in 395 students. I will first apply MCA to the student data, and check whats the least number of components required to make comparable predictions. The data can be downloaded from http://tinyurl.com/h2wvk2r. Two previous posts with exploratory analysis and details on MCA can be found at 
 
-- Introduction to MCA: http://wp.me/p7EqYU-1o
-- Building Student Intervention System- EDA: http://wp.me/p7EqYU-1N.
+- [Introduction to MCA](http://vxy10.github.io/2016/06/10/intro-MCA/)
+- [Building a student intervention system - EDA](http://vxy10.github.io/2016/06/10/si-EDA/)
 
 If you are not familiar with MCA, Benzécri and Greenacre corrections, please read the introduction to MCA blog before proceeding.
 
