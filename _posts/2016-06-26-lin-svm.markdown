@@ -95,7 +95,7 @@ plt.xlim(-8,8)
 
 #### Margin
 
-We define margin as the perpendicular distance between the two black dotted lines. These lines indicate separation between the two black dashed lines. From coordinate geometry, the distance between the two lines \\( W^T X  = b_1 \\) and \\( W^T X = b_2 \\) is given by \\( (b_1 - b_2)/|| W|| \\), therefore the margin is
+We define margin as the perpendicular distance between the two black dotted lines. These lines indicate separation between the two black dashed lines. From coordinate geometry, the distance between the two lines \\( W^T X  = b_1 \\) and \\( W^T X = b_2 \\) is given by \\( (b_1 - b_2)/  \left| W  \right| \\), therefore the margin is
 
 $$ margin = \frac{2}{||W||} $$.
 
