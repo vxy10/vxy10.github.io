@@ -112,15 +112,22 @@ Note, all terms in the equation above are scalar. Taking derivative with respect
 
 $$ \frac{\partial \mathbf{J}}{\partial \mathbf{W}} =  \left( \mathbf{ W^T X^T  X - y^T X }    \right)  $$
 
-Minimum is obtained when the derivative above is zero. Most commonly used approach is a gradient descent based solution where W is updated as, 
+#### Gradient-descent method
+
+Minimum is obtained when the derivative above is zero. Most commonly used approach is a gradient descent based solution where we start with some initial guess for W, and update it as, 
 
 $$ \mathbf{W_{k+1}}  = \mathbf{W_{k}} - \mu \frac{\partial \mathbf{J}}{\partial \mathbf{W}} $$
 
+It always a good idea to test if the analytically computed derivative is correct, this is done by using the central difference method, 
+$$ \frac{\partial \mathbf{J}}{\partial \mathbf{W}}_{numerical} \approx  \frac{\mathbf{J(W+h) - J(W-h)}}{2h} $$
 
-by taking transpose and solving for W, we get, 
+Central difference method is better suited because the central difference method has error of \\( O(h^2 \\), while the forward difference has error of \\( O(h) \\). Interested readers may look up Taylor series expansion or may choose to wait for a later post.
+
+
+#### Pseudoinverse method
+By taking transpose and solving for W, we get, 
 
 $$ \mathbf{W} = \mathbf{ \underbrace{(X^T  X)^{-1}X^T}_{Pseudoinverse} ~ y } $$
-
 
 
 
@@ -166,17 +173,50 @@ Gradient descent method is used to calculate the best-fit line. A small value of
 
 
 ```python
+def get_numerical_derv(W):
+    h = 0.00001
+
+    W1 = W + [h,0]
+    errpl1 = np.dot(X_stack,W1)-Y
+    W1 = W - [h,0]
+    errmi1 = np.dot(X_stack,W1)-Y
+    W2 = W + [0,h]
+    errpl2 = np.dot(X_stack,W2)-Y
+    W2 = W - [0,h]
+    errmi2 = np.dot(X_stack,W2)-Y
+    
+    dJdW_num1 = (np.dot(errpl1,errpl1)-np.dot(errmi1,errmi1))/2./h/2.
+    dJdW_num2 = (np.dot(errpl2,errpl2)-np.dot(errmi2,errmi2))/2./2./h
+
+    dJdW_num = [dJdW_num1,dJdW_num2]
+    return dJdW_num
+
+
+```
+
+
+```python
 t0 = time.time()
 W_all = []
 err_all = []
 W = np.zeros((2))
 lr = 0.00005
+h = 0.0001
 for i in np.arange(0,250):
+    
+
+    
     W_all.append(W)
     err = np.dot(X_stack,W)-Y
-    err_all.append( np.sqrt( np.dot(err,err)/100.) )
+    err_all.append(  np.dot(err,err) )
     XtX = np.dot(X_stack.T,X_stack)
     dJdW = np.dot(W.T,XtX) - np.dot(Y.T,X_stack)
+    if (i%50)==0:
+        dJdW_n = get_numerical_derv(W)
+        print 'Iteration # ',i
+        print 'Numerical gradient: [%0.2f,%0.2f]'%(dJdW_n[0],dJdW_n[1])
+        print 'Analytical gradient:[%0.2f,%0.2f]'%(dJdW[0],dJdW[1])
+    
     W = W - lr*dJdW
 
 tf = time.time()
@@ -188,6 +228,22 @@ plt.ylabel('RMS Error')
 
 
 ```
+
+    Iteration #  0
+    Numerical gradient: [-1327.59,-519.43]
+    Analytical gradient:[-1327.59,-519.43]
+    Iteration #  50
+    Numerical gradient: [-257.34,-108.61]
+    Analytical gradient:[-257.34,-108.61]
+    Iteration #  100
+    Numerical gradient: [-47.88,-27.81]
+    Analytical gradient:[-47.88,-27.81]
+    Iteration #  150
+    Numerical gradient: [-6.99,-11.67]
+    Analytical gradient:[-6.99,-11.67]
+    Iteration #  200
+    Numerical gradient: [0.90,-8.20]
+    Analytical gradient:[0.90,-8.20]
 
     Gradient descent took 0.005565 s
 
