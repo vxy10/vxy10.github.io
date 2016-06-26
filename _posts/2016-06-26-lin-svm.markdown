@@ -95,7 +95,7 @@ plt.xlim(-8,8)
 
 #### Margin
 
-We define margin as the perpendicular distance between the two black dotted lines. These lines indicate separation between the two black dashed lines. From coordinate geometry, the distance between the two lines \\( W^T X  = b_1 \\) and \\( W^T X = b_2 \\) is given by \\( (b_1 - b_2)/  \left| W  \right| \\), therefore the margin is
+We define margin as the perpendicular distance between the two black dotted lines. These lines indicate separation between the two black dashed lines. From coordinate geometry, the distance between the two lines \\( W^T X  = b_1 \\) and \\( W^T X = b_2 \\) is given by \\( (b_1 - b_2)/   W   \\), therefore the margin is
 
 $$ margin = \frac{2}{||W||} $$.
 
@@ -162,7 +162,7 @@ where \\( \delta_i = 0 \\) if \\(i^{th} \\) point is classified correctly, else 
 - small \\(\lambda \\) makes constraints hard to ignore i.e. narrow margin
 - \\(\lambda = 0 \\) enforces all constraints: hard margin
 
-The cost function above can be differentiated with respect to \\( W \\) to obtain solution that classifies the data while maximizing the margin. Note that the cost function has a unique minimum because it is formed by adding a quadratic-convex function \\( ||W||^2 \\) to a non-negative monotonous function \\( \delta^T \left( 1  -  t_i W^Tx_i \right) \\). 
+The cost function above can be differentiated with respect to \\( W \\) to obtain solution that classifies the data while maximizing the margin. Note that the cost function has a unique minimum because it is formed by adding a quadratic-convex function to a non-negative monotonous function \\( \delta^T \left( 1  -  t_i W^Tx_i \right) \\). 
 
 
 
