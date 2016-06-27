@@ -306,3 +306,5 @@ plt.title('lambda = 100')
 ### Conclusion
 
 In this post, we saw how support vector machines can be applied to develop a simple 2-class classifier. The same scheme can be extended to multi-class classifiers. We defined a cost-function, parametrized in terms of the support vectors \\(W \\) that maximized the margin of error while keeping the classification accuracy high. The cost-function had a \\( \lambda \\) parameter that weighed the margin or error with classification accuracy. Larger \\( \lambda \\) gave a classifier that would allow more classification errors. Simple gradient descent algorithm was applied to calculate the optimal set of weights. During training, first the support vectors align along the appropriate line, and then the margins become tigher. 
+
+One limitation of SVMs is that once the data is classified correctly, the weights do not change because the contribution of the correctly classified error terms is 0. This is especially true for the case were \\( \lambda = 0 \\). In contrast, a softmax cost function takes into account how well the points are classified and always seeks a better solution. 
