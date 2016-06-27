@@ -69,6 +69,7 @@ plt.xlim(-8,8)
 We wish to find \\(W\\) and \\(b\\) such that, 
 
 $$ W^Tx+b > 1 , \text{ for blue class i.e } t = 1$$
+
 $$ W^Tx+b < -1 , \text{ for green class i.e } t = -1$$.
 
 This is also represented by the 3 lines shown below. The red line indicates the best separating line, while the dotted black lines indicate the margin boundaries. To account for cases where the separation is not as clean as that shown below, a slack variable \\( \psi \\) is introduced. 
