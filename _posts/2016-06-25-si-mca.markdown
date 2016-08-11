@@ -888,6 +888,27 @@ ax.scatter(x, y, z,  s=30,color = 'b',alpha = 0.5)
 </div>
 
 
+### Applying tSNE
+Data above suggests that the students who drop out and who continue in the course have very similar characteristics and it is difficult to separate the two data sets. I therefore applied tSNE to identify if the data is easily separable. tSNE results indicate that the data in the two groups are very similar. Therefore, training models are expected to be very sensitive to the data, i.e. there is a high chance of overfitting. 
+
+Further, as the number of students who dropped out (130) is less than the number of students who didn't drop out (265), a all 1 prediction will have very good score. For example, precision when all entries are predicted as not drop out is (265/395 = 0.67088) and recall is equal to 1. The f1-score for all 1 predictions  is 0.8030. Therefore, it is crucial to choose the classifier correctly. Further, more emphasis should be placed on improving precision scores. 
+
+
+```python
+from sklearn.manifold import TSNE
+
+model = TSNE(n_components=2, init='pca', random_state=0)
+tSNE_data = model.fit_transform(ind_data_DF) 
+plt.figure()
+plt.plot(tSNE_data[target_01==1,0],tSNE_data[target_01==1,1],'rs')
+plt.plot(tSNE_data[target_01==0,0],tSNE_data[target_01==0,1],'bo')
+```
+
+<div class='fig figcenter fighighlight'>
+  <img src='/images/si-tSNE.png'>
+</div>
+
+
 ### Conclusion
 
 In this post, I applied Multiple Correspondance Analysis (MCA) to demographic and socioeconomic data collected in 395 students. MCA is a dimensionality reduction techique for data with all categorical variables. After applying MCA, the number of features reduced to less than 15. Preliminary EDA suggests that 5 dimensions may be sufficient to predict which students are at risk of failing the prgoram. 
