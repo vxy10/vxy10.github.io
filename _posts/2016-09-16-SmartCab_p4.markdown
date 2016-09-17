@@ -13,7 +13,7 @@ mathjax: true
 #### Abstract
 
 This document presents the work I did on applying Q-learning algorithm for Udacity's self-driving cab project for [Udacity's machine learning nano-degree](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009). 
-In this project, I applied Q-learning to develop algorithm to autonomously drive a smartcab around in city. The smartcab navigates from one intersection to another, and at each intersection the cab recieves input regarding the traffic light,  next way point, and information about oncoming traffic. I modified the 'environment.py' and 'agent.py' functions to developed the controller in stages. Python notebook with code for testing algorithm is presented here. 
+In this project, I applied Q-learning to develop algorithm to autonomously drive a smartcab around in city. The smartcab navigates from one intersection to another, and at each intersection the cab recieves input regarding the traffic light,  next way point, and information about oncoming traffic. I modified the 'environment.py' and 'agent.py' functions to developed the controller in stages. Python notebook with code for testing algorithm is presented [here](http://vxy10.github.io/2016/09/16/SmartCab_supplemental/). 
 
 In the first stage, I compared the performance of Q-learning algorithm by using the traffic light,  next way point, and information about oncoming traffic as state inputs vs. another case where the smartcab made decisions based solely on traffic light and  next way point.  Purpose of doing so was to test if Q-learning algorithm is implemented correctly (sanity check) as follows, 
 
