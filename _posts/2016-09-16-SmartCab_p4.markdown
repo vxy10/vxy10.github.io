@@ -348,6 +348,7 @@ We will next investigate if the controller which negative behavior controller ha
  |red|None|None|forward|forward|left| -0.3|
 
 Links to youtube videos for smartcab driving with,
+
 1. 3 agents: [https://www.youtube.com/watch?v=-eYBKD3-NN4](https://www.youtube.com/watch?v=-eYBKD3-NN4)
 2. 20 agents:[https://www.youtube.com/watch?v=a4X9R7v3mrc](https://www.youtube.com/watch?v=a4X9R7v3mrc)
 
