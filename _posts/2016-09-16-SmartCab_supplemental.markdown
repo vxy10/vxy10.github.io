@@ -128,7 +128,7 @@ plt.ylabel('Deadline - # Steps')
 
 <div class='fig figcenter fighighlight'>
   <img src='/images/output_8_1.png'>
-  <figcaption>Fig 2. - Receding horizon control example  </figcaption>
+  <figcaption>Fig 1. - Performance of a random agent  </figcaption>
 </div>
 
 
@@ -216,7 +216,7 @@ plt.plot([0,100],[0,0])
 
 <div class='fig figcenter fighighlight'>
   <img src='/images/output_11_1.png'>
-  <figcaption>Fig 2. - Receding horizon control example  </figcaption>
+  <figcaption>Fig 2. - Random agent compared to Q-learner with 5 states.  </figcaption>
 </div>
 
 
@@ -264,7 +264,7 @@ plt.suptitle('5 states (Traffic, 3 oncoming and Waypoint)')
 
 <div class='fig figcenter fighighlight'>
   <img src='/images/output_12_1.png'>
-  <figcaption>Fig 2. - Receding horizon control example  </figcaption>
+  <figcaption>Fig 3. - Q-learner with 5 states for different number of agents.   </figcaption>
 </div>
 
 
@@ -412,13 +412,12 @@ plt.suptitle('2 states (Traffic and Waypoint)')
 
 
 
-    <matplotlib.text.Text at 0x135f36790>
 
 
 
 <div class='fig figcenter fighighlight'>
   <img src='/images/output_16_1.png'>
-  <figcaption>Fig 2. - Receding horizon control example  </figcaption>
+  <figcaption>Fig 4. - Q-learner with 2 states for different number of agents.  </figcaption>
 </div>
 
 
@@ -461,7 +460,7 @@ plt.ylabel('gamma')
 
 <div class='fig figcenter fighighlight'>
   <img src='/images/output_19_1.png'>
-  <figcaption>Fig 2. - Receding horizon control example  </figcaption>
+  <figcaption>Fig 5. - Q-learner performance for different parameter values.   </figcaption>
 </div>
 
 
@@ -525,7 +524,7 @@ plt.xlabel('Iteration')
 
 <div class='fig figcenter fighighlight'>
   <img src='/images/output_22_1.png'>
-  <figcaption>Fig 2. - Receding horizon control example  </figcaption>
+  <figcaption>Fig 6. - Final trained Q-learner performance for different number of agents in the environment  </figcaption>
 </div>
 
 
