@@ -125,12 +125,14 @@ plt.ylabel('Deadline - # Steps')
 
 
 
-    <matplotlib.text.Text at 0x128172d10>
+
+<div class='fig figcenter fighighlight'>
+  <img src='/images/output_8_1'>
+  <figcaption>Fig 2. - Receding horizon control example  </figcaption>
+</div>
 
 
 
-
-![png](output_8_1.png)
 
 
 
@@ -209,12 +211,14 @@ plt.plot([0,100],[0,0])
 
 
 
-    [<matplotlib.lines.Line2D at 0x134b1fe10>]
+ 
 
 
+<div class='fig figcenter fighighlight'>
+  <img src='/images/output_11_1'>
+  <figcaption>Fig 2. - Receding horizon control example  </figcaption>
+</div>
 
-
-![png](output_11_1.png)
 
 
 
@@ -255,12 +259,15 @@ plt.suptitle('5 states (Traffic, 3 oncoming and Waypoint)')
 
 
 
-    <matplotlib.text.Text at 0x135287210>
 
 
 
+<div class='fig figcenter fighighlight'>
+  <img src='/images/output_12_1'>
+  <figcaption>Fig 2. - Receding horizon control example  </figcaption>
+</div>
 
-![png](output_12_1.png)
+
 
 
 
@@ -409,8 +416,11 @@ plt.suptitle('2 states (Traffic and Waypoint)')
 
 
 
+<div class='fig figcenter fighighlight'>
+  <img src='/images/output_16_1'>
+  <figcaption>Fig 2. - Receding horizon control example  </figcaption>
+</div>
 
-![png](output_16_1.png)
 
 
 ### Q-learning agent: Performance tuning, 5 states (traffic light, 3X oncoming traffic, way-point)
@@ -447,12 +457,13 @@ plt.ylabel('gamma')
 
 
 
-    <matplotlib.text.Text at 0x131b70590>
 
 
+<div class='fig figcenter fighighlight'>
+  <img src='/images/output_19_1'>
+  <figcaption>Fig 2. - Receding horizon control example  </figcaption>
+</div>
 
-
-![png](output_19_1.png)
 
 
 ### Q-learning agent: Optimal performance
@@ -510,12 +521,15 @@ plt.xlabel('Iteration')
 
 
 
-    <matplotlib.text.Text at 0x123553b10>
+
+
+<div class='fig figcenter fighighlight'>
+  <img src='/images/output_22_1'>
+  <figcaption>Fig 2. - Receding horizon control example  </figcaption>
+</div>
 
 
 
-
-![png](output_22_1.png)
 
 
 
