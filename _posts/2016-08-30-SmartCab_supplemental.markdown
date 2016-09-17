@@ -127,7 +127,7 @@ plt.ylabel('Deadline - # Steps')
 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/images/output_8_1'>
+  <img src='/images/output_8_1.png'>
   <figcaption>Fig 2. - Receding horizon control example  </figcaption>
 </div>
 
@@ -215,7 +215,7 @@ plt.plot([0,100],[0,0])
 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/images/output_11_1'>
+  <img src='/images/output_11_1.png'>
   <figcaption>Fig 2. - Receding horizon control example  </figcaption>
 </div>
 
@@ -263,7 +263,7 @@ plt.suptitle('5 states (Traffic, 3 oncoming and Waypoint)')
 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/images/output_12_1'>
+  <img src='/images/output_12_1.png'>
   <figcaption>Fig 2. - Receding horizon control example  </figcaption>
 </div>
 
@@ -417,7 +417,7 @@ plt.suptitle('2 states (Traffic and Waypoint)')
 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/images/output_16_1'>
+  <img src='/images/output_16_1.png'>
   <figcaption>Fig 2. - Receding horizon control example  </figcaption>
 </div>
 
@@ -460,7 +460,7 @@ plt.ylabel('gamma')
 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/images/output_19_1'>
+  <img src='/images/output_19_1.png'>
   <figcaption>Fig 2. - Receding horizon control example  </figcaption>
 </div>
 
@@ -524,7 +524,7 @@ plt.xlabel('Iteration')
 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/images/output_22_1'>
+  <img src='/images/output_22_1.png'>
   <figcaption>Fig 2. - Receding horizon control example  </figcaption>
 </div>
 
