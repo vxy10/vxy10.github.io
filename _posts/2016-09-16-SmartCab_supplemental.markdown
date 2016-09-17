@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "Q-learning for self-driving smartcab: Supplimental material"
 excerpt: "Q-learning for self-driving smartcab: Supplimental material."
-date:   2016-08-30 11:00:00
+date:   2016-09-16 11:00:00
 mathjax: true
 ---
 
