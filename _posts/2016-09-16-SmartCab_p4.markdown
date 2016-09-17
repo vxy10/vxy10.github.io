@@ -369,3 +369,12 @@ The top 10 state-action pairs sorted by decreasing order of Q-value for 3, 20 an
   </tbody>
 </table>
 </div>
+
+
+### Optimal performance
+
+Below are 2 youtube videos of the smartcab using Q-learning for navigating the environment to reach destination. The fist video shows simulations with 3 other agents in the environment, and the next shows simulations with 20 other agents. 
+
+<iframe width="420" height="280" src="https://www.youtube.com/embed/-eYBKD3-NN4" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="420" height="280" src="https://www.youtube.com/embed/a4X9R7v3mrc" frameborder="0" allowfullscreen></iframe>
