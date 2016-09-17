@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "Driving a smart cab using Q-learning"
 excerpt: "Q-learning for self-driving smartcab."
-date:   2016-09-16 11:00:00
+date:   2016-09-17 11:00:00
 mathjax: true
 ---
 
@@ -282,9 +282,70 @@ Plots below present how early the smartcab arrived at destination, when there we
 ### Question: 
 Does your agent get close to finding an optimal policy, i.e. reach the destination in the minimum possible time, and not incur any penalties? How would you describe an optimal policy for this problem?
 
-### Response: 
+### Response
+After fine tuning  Q-learning parameters, the smartcab reached its destination always. The smartcab missed it deadline only in 1 of 100 trials when there were 40 other cars in the environment. Based on this, we can safely say that the smartcab has learned a policy that will take the car from any start position on the grid to the destination. However, it is not clear if the learned behavior is optimal. To investigate this further, I tabulated Q-values for state-action pairs that have positive and negative Q-values. All other states that are not represented in the table below have a zero value, in such cases the controller will choose one action at random. Note, in cases where all other actions have negative reward, the action with no cost is the optimal choice. More importantly of the 1586 combinations of possible states, the car visited only 148. Assuming the car experiences only one oncoming traffic from either direction, this number reduces to 384. Therefore, there are many state-action pairs that the car has not visited. So the car has not learned the best-strategy yet. The suboptimal controller it learned is good for most cases, however, if special circumstances arrive say when the car sees vehicles approaching it from different directions, it may make an erroneous decision and may act like a random agent. 
 
-After fine tuning  Q-learning parameters, the smartcab reached its destination always. The smartcab missed it deadline only in 1 of 100 trials when there were 40 other cars in the environment. Based on this, we can safely say that the smartcab has learned the optimal policy. 
+
+#### Learned positive behavior: 
+
+Table below presents state-action pairs for which the Q-value is positive. The table presents Q-values for the case when there are 3 cars in the environment, and all 5 states (traffic, 3 oncoming traffic and waypoint) are used as state inputs.  The controller seems to have learned good strategy. For example, when the light is green, and there is no oncoming traffic from any direction, the optimal task to perfom is to go forward if the next waypoint is forward. Another behavior controller favors is that if the next way-point is right, the controller turns to right irrespective of traffic light if there is no oncoming traffic. Further, the controller has learned that if the oncoming traffic is turning to left, it is its right of way and it will move ahead. From these examples, it appears that the controller has figured out good driving behavior and follows it. 
+
+| Traffic Light | Oncoming | Left | Right | Waypoint | Action | Q |
+| :-----: | :---------: | :--------------------: | :--------------: | :-------------: |:--------------: | :-------------: |
+|green|None|None|None|forward|forward| 9.876|
+ |green|None|None|None|right|right| 7.206|
+ |red|None|None|None|right|right| 6.689|
+ |green|None|None|forward|right|right| 4.544|
+ |green|None|None|None|left|left| 4.150|
+ |green|left|None|None|forward|forward| 4.094|
+ |red|forward|None|None|right|right| 3.660|
+ |green|forward|None|None|forward|forward| 1.544|
+ |green|None|None|right|forward|forward| 1.544|
+ |green|None|None|left|forward|forward| 1.544|
+ |green|None|left|None|forward|forward| 1.110|
+ |green|None|left|None|right|right| 1.110|
+ |green|None|None|left|left|left| 0.6|
+ |red|None|None|left|right|right| 0.6|
+ |red|right|None|None|right|right| 0.6|
+ |red|None|None|right|right|right| 0.6|
+ 
+We will next investigate if the controller which negative behavior controller has learned. This is crucial because negative behavior quantifies penalities incurred due to either breaking traffic laws or risking accidents. The list of negative behaviors is longer because for each state where best strategy is to do nothing, all the other actions have a negative cost. For example, if the signal is red and the next way point is left, when no traffic is coming, the car is expected to idle. This is caputred below by negative rewards for turning left, right or going forward. It appears that car always at the signal for cases when the waypoint and action are not the same. More importantly, some important behaviors are missing from the model. For example, the state corresponding to the case when the signal is green, oncoming traffic is moving forward and the way point is left, is not seen in the training. Further, there are a total of 1586 possible state-control combinations, and the car has seen only 148 of them. Therefore, the controller is not optimal, and needs more training. 
+ 
+ 
+ | Traffic Light | Oncoming | Left | Right | Waypoint | Action | Q |
+| :---------------: | :---------------------: | :--------------------: | :--------------: | :-------------: |:--------------: | :-------------: |
+ |red|None|None|None|left|right| -0.15|
+ |green|None|right|None|forward|right| -0.15|
+ |green|left|None|None|right|forward| -0.15|
+ |green|None|None|forward|forward|right| -0.15|
+ |green|None|None|None|forward|left| -0.15|
+ |green|None|forward|None|left|forward| -0.15|
+ |green|None|None|right|left|forward| -0.15|
+ |red|left|None|None|forward|right| -0.15|
+ |red|forward|None|None|left|right| -0.15|
+ |green|None|forward|None|forward|right| -0.15|
+ |green|None|None|forward|forward|left| -0.15|
+ |green|None|None|left|right|left| -0.15|
+ |green|None|right|None|right|left| -0.15|
+ |green|None|right|None|forward|left| -0.15|
+ |red|None|left|None|forward|right| -0.15|
+ |red|None|None|None|forward|right| -0.15|
+ |red|None|left|None|left|right| -0.15|
+ |green|None|None|right|forward|left| -0.15|
+ |green|forward|None|None|forward|left| -0.3|
+ |red|None|None|None|left|forward| -0.3|
+ |red|right|None|None|forward|forward| -0.3|
+ |red|None|left|None|forward|left| -0.3|
+ |red|left|None|None|forward|left| -0.3|
+ |red|None|None|None|forward|left| -0.3|
+ |red|left|None|None|forward|forward| -0.3|
+ |red|forward|None|None|forward|forward| -0.3|
+ |red|None|None|left|forward|left| -0.3|
+ |red|None|None|None|left|left| -0.3|
+ |red|None|None|None|right|left| -0.3|
+ |red|forward|None|None|forward|left| -0.3|
+ |red|None|None|None|forward|forward| -0.3|
+ |red|None|None|forward|forward|left| -0.3|
 
 Links to youtube videos for smartcab driving with,
 1. 3 agents: [https://www.youtube.com/watch?v=-eYBKD3-NN4](https://www.youtube.com/watch?v=-eYBKD3-NN4)
